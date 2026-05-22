@@ -337,3 +337,91 @@ class Circle(Shape):
 c1 = Circle()
 
 c1.draw()
+
+#REVISION
+class Employee:
+  def __init__(self,name,salary):
+    self.name=name
+    self.salary=salary
+  def show(self):
+    print("Name:",self.name)
+    print("Salary:",self.salary)
+class Manager(Employee):
+  def __init__(self,name,salary,department):
+    super().__init__(name,salary):
+    self.department=department
+  def show(self):
+    print("Manager Name:",self.name)
+    print("Salary:",self.salary)
+    print("Department:",self.department)
+man1=Manager("Arun",50000,"HR")
+man1.show()
+
+#TASK 2
+class Animals:
+  def sound(self):
+    print("Animals make sound ")
+class Dog(Animals):
+  def bark(self):
+    print("Dog Barks")
+class Cat(Animals):
+  def meow(self):
+    print("Cat Meows")
+dog1=Dog()
+cat1=Cat()
+dog1.sound()
+cat1.sound()
+
+ENCAPSULATION : HIDING DATA FROM DIRECT ACCESS 
+eg : ATM hides bank details , mobile hides internal systems
+
+Private variable example 
+class bank:
+  def __init__(self,balance):
+    self.balance=balance
+b1= Bank(50000)
+print(b1.__balance)
+
+OUTPUT:
+Attribute Error
+
+Access using method
+class Bank:
+  def __init__(self,balance):
+    self.balance=balance
+  def showBalance(self):
+    print("Balance:",self.__balance)
+  b1=Bank(50000)
+  b1.showBalance()
+
+Output 
+Balance: 50000
+
+TO PROTECT DATA 
+TO PROVIDE SECURITY TO DATA WE USE ENCAPULATION
+
+class Student:
+  def __init__(self,marks):
+    self.marks=marks
+  def display(self):
+    print("MArks:",self.__marks)
+s1=Student(95)
+s1.display()
+
+#Task !
+class Account:
+  def __init__(self,password):
+    self.__password=password
+  def show_password(self):
+    print("Password is displayed",self.__password)
+a1=Account(1234)
+a1.show_password()
+
+#Task 2
+class Mobile:
+  def __init__(self,price):
+    self.__price=price
+  def show_price(self):
+    Price("Price:",self.__price)
+m1=Mobile(50000)
+s1.show_price()
