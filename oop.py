@@ -422,6 +422,15 @@ class Mobile:
   def __init__(self,price):
     self.__price=price
   def show_price(self):
-    Price("Price:",self.__price)
+    Print("Price:",self.__price)
 m1=Mobile(50000)
 s1.show_price()
+
+class student:
+  def __init__(self,marks):
+    self.__marks=marks
+  def showmarks():
+    print("Marks",self.__marks)
+s1=students(97)
+s1.showmarks()
+    
