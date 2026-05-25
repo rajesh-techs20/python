@@ -460,6 +460,7 @@ Bike started
 Another Example:
 from abc import ABC,abstractmethod
 class Animal(ABC):
+  @abstractmethod
   def sound(self):
     pass
 class Dog(Animal):
@@ -467,3 +468,17 @@ class Dog(Animal):
     print("Dog Barks")
 d1=Dog()
 d1.sound()
+
+Task 1 :
+from abc import ABC,abstractmethod
+class Shape(ABC):
+  @abstractmethod
+  def draw(self):
+    pass
+class Circle(Shape):
+  def draw(self):
+    print("Drawing Circle")
+c1=Circle()
+c1.draw()
+
+
