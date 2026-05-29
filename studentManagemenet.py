@@ -17,7 +17,8 @@ while True:
     print("2.Show Student Details")
     print("3.Search Student")
     print("4.Topper")
-    print("5.Exit System")
+    PRINT("5.Delete student")
+    print("6.Exit System")
 
     choice=int(input("Enter the choice:"))
 
@@ -54,6 +55,16 @@ while True:
                 topper=student
                 print("Topper of the class is",student.name,"scored",student.marks)
     elif choice==5:
+        delete=input("Enter the name of student to delete:")
+        for student in students:
+            if delete==student.name:
+                students.remove(student)
+                print("Student deleted successfully")
+                break
+    else: 
+        print("Student Not found")
+            
+    elif choice==6:
         print("EXITING THE SYSTEM.......")
         break
     else:
