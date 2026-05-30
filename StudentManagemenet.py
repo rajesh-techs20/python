@@ -17,8 +17,9 @@ while True:
     print("2.Show Student Details")
     print("3.Search Student")
     print("4.Topper")
-    PRINT("5.Delete student")
-    print("6.Exit System")
+    Print("5.Delete student")
+    print("6.Update Marks")
+    print("7.Exit System")
 
     choice=int(input("Enter the choice:"))
 
@@ -61,13 +62,22 @@ while True:
                 students.remove(student)
                 print("Student deleted successfully")
                 break
-    else: 
-        print("Student Not found")
-            
+        else: 
+            print("Student Not found")
     elif choice==6:
+        update=input("Enter the name of student to update marks:")
+        for student in students:
+            if update==student.name:
+                newMarks=int(input("Enter the new marks of student:")
+                student.marks=newMarks
+                print("Student marks uopdated succesfully")
+    
+
+    elif choice==7:
         print("EXITING THE SYSTEM.......")
         break
-    else:
+    
+     else:
         print("Invalid Options,Please try again")
         print("Invalid Choice..Please Check once and Try again")
 
