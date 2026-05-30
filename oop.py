@@ -179,13 +179,9 @@ car1.info()
 # =========================================
 
 class Animal:
-
     def eat(self):
         print("Animal is eating")
-
-
 class Cat(Animal):
-
     def sound(self):
         print("Cat says meow")
 
@@ -376,7 +372,7 @@ ENCAPSULATION : HIDING DATA FROM DIRECT ACCESS
 eg : ATM hides bank details , mobile hides internal systems
 
 Private variable example 
-class bank:
+class Bank:
   def __init__(self,balance):
     self.balance=balance
 b1= Bank(50000)
@@ -388,7 +384,7 @@ Attribute Error
 Access using method
 class Bank:
   def __init__(self,balance):
-    self.balance=balance
+    self.__balance=balance
   def showBalance(self):
     print("Balance:",self.__balance)
   b1=Bank(50000)
@@ -402,7 +398,7 @@ TO PROVIDE SECURITY TO DATA WE USE ENCAPULATION
 
 class Student:
   def __init__(self,marks):
-    self.marks=marks
+    self.__marks=marks
   def display(self):
     print("MArks:",self.__marks)
 s1=Student(95)
@@ -434,7 +430,7 @@ class student:
 s1=students(97)
 s1.showmarks()
 
-#Abstraction
+ABSTRACTION
 Hiding implementation details
 real life examples
 ATM Machine
@@ -481,4 +477,70 @@ class Circle(Shape):
 c1=Circle()
 c1.draw()
 
+
+WEEKEND REVISION 
+class student:
+  def __init__(self,name,age):
+    self.name=name
+    self.age=age
+s1=student("Rajesh",19)
+print(s1.name)
+print(s1.age)
+
+class welcome:
+  def __init__(self,name):
+    self.name=name:
+  def greet(self):
+    print("Hello",self.name)
+s1=welcome("Ramu")
+s1.greet()
+
+INHERITENCE
+class Animal:
+  def sound(self):
+    print("Animals make sound")
+class Cat(Animal):
+  def eat(self):
+    print("Cat eating food")
+cat1=Cat()
+cat1.sound()
+cat1.eat()
+
+POLYMORPHISM
+class Animal:
+  def sound(self):
+    print("Animals makes sound")
+class Cat(Animal):
+  def sound(self):
+    print("cat sounds meow")
+cat1=Cat()
+cat1.sound()
+
+SUPER()METHOD
+class Employee:
+  def __init__(self,name,age):
+    self.name=name
+    self.age=age
+class Manager(Employee):
+  def __init__(self,name,age,salary):
+    super().__init__(name,age):
+    self.salary=salary
+  def display(self):
+    print("Name:",self.name)
+    print("Age:",self.age)
+    print("Salary:",self.salary)
+m1=Managaer("Arun",45,70000)
+s1.display()
+
+ENCAPULATION 
+Hide Data From direct access like ATM hides bank details
+And mobile hides internal systems
+
+class Bank:
+  def __init__(self,balance):
+    self.__balance=balance
+  def display(self):
+    print("balance:"self.__balance)
+b1=Bank(90000)
+b1.display()
 
