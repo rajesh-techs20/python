@@ -1,0 +1,12 @@
+class Solution(object):
+  def maxprofit(self,prices):
+    lowest_price=prices[0]
+    max_profit=0
+    for price in prices:
+      if price<lowest_price:
+        lowest_price=price
+      else:
+        profit=price-lowest_price
+        if profit>max_profit:
+          max_profit=profit
+    return max_profit
