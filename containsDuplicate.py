@@ -10,3 +10,4 @@ class Solution(object):
     return False
 
 Time complexity O(n)
+space complexity O(1)
