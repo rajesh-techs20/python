@@ -43,11 +43,13 @@ print(mat[0][1]) #1st row 2nd element
 print(mat[1][2]) #2nd row 3rd elent
 print(mat[1]) #2nd row full
 print(mat[:,1]) #Entire 1st column
+print(mat[1:3, 0:2]) #Submatrix from row 1 to 2 and column 0 to 1
 
 #OUTPUT
 2
 6
 [4 5 6]
 [2 5 8]
-
+[[4 5]
+ [7 8]]
 
