@@ -30,3 +30,24 @@ print(c[3:])  #last 3 elements
 [10 15 20 25]
 [ 5 10 15 20]
 [15 20 25 30]
+
+#INDEX SLICING OF 2D ARRAY
+mat=np.array([
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+])
+
+#access elements
+print(mat[0][1]) #1st row 2nd element
+print(mat[1][2]) #2nd row 3rd elent
+print(mat[1]) #2nd row full
+print(mat[:,1]) #Entire 1st column
+
+#OUTPUT
+2
+6
+[4 5 6]
+[2 5 8]
+
+
