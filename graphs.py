@@ -8,3 +8,17 @@ plt.xlabel("X Values")
 plt.ylabel("Y Values")
 
 plt.show()
+
+
+#BAR GRAPH
+
+import matplotlib.plotpy as plt
+
+students=["Adish","Rajesh","Nandan"]
+marks=[12,16,10]
+plt.bar(students,marks)
+
+plt.xlabel("Students")
+plt.ylabel("Marks")
+
+plt.show()
