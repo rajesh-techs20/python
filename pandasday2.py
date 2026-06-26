@@ -66,3 +66,19 @@ Name: Name, dtype: str
 86.0
 99
 67
+Name     Adish
+Marks       78
+Grade        C
+Name: 2, dtype: object
+Name     Adish
+Marks       78
+Grade        C
+Name: 2, dtype: object
+Nandan
+     Name  Marks Grade
+1  Nandan     88     B
+2   Adish     78     C
+3  Venkat     99     A
+     Name  Marks Grade
+1  Nandan     88     B
+2   Adish     78     C
