@@ -20,6 +20,11 @@ print(df["Name"]) #names
 print(df["Marks"].mean()) #average marks
 print(df["Marks"].max()) #maximum marks
 print(df["Marks"].min()) #minimum marks
+print(df.loc[2]) #row with index 2
+print(df.iloc[2]) #row with index 2
+print(df.loc[1,"Name"]) #row with index 1 and column Name
+print(df.loc[1:3])
+print(df.iloc[1:3])
 
 OUTPUT
  Name  Marks Grade
