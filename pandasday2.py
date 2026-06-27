@@ -27,6 +27,14 @@ print(df.loc[1:3])
 print(df.iloc[1:3])
 print(df.iloc[4,1])
 print(df.describe())
+print(df.sort_values(by="Marks"))
+print(df.sort_values(by="Marks", ascending=False))
+print(df["Grade"].value_counts())
+print(df["Grade"].value_counts("A")) 
+print(df["Grade"].unique())
+print(df.sample(2)) 
+
+
 OUTPUT
  Name  Marks Grade
 0  Rajesh     98     A
