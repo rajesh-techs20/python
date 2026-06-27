@@ -25,7 +25,7 @@ print(df.iloc[2]) #row with index 2
 print(df.loc[1,"Name"]) #row with index 1 and column Name
 print(df.loc[1:3])
 print(df.iloc[1:3])
-
+print(df.iloc[4,1])
 OUTPUT
  Name  Marks Grade
 0  Rajesh     98     A
@@ -82,3 +82,4 @@ Nandan
      Name  Marks Grade
 1  Nandan     88     B
 2   Adish     78     C
+67
