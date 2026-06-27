@@ -101,3 +101,31 @@ min    67.000000
 50%    88.000000
 75%    98.000000
 max    99.000000
+ Name  Marks Grade
+4     Ram     67     C
+2   Adish     78     C
+1  Nandan     88     B
+0  Rajesh     98     A
+3  Venkat     99     A
+     Name  Marks Grade
+3  Venkat     99     A
+0  Rajesh     98     A
+1  Nandan     88     B
+2   Adish     78     C
+4     Ram     67     C
+Grade
+A    2
+C    2
+B    1
+Name: count, dtype: int64
+Grade
+A    0.4
+C    0.4
+B    0.2
+Name: proportion, dtype: float64
+<ArrowStringArray>
+['A', 'B', 'C']
+Length: 3, dtype: str
+     Name  Marks Grade
+1  Nandan     88     B
+3  Venkat     99     A
