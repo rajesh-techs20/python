@@ -26,6 +26,7 @@ print(df.loc[1,"Name"]) #row with index 1 and column Name
 print(df.loc[1:3])
 print(df.iloc[1:3])
 print(df.iloc[4,1])
+print(df.describe())
 OUTPUT
  Name  Marks Grade
 0  Rajesh     98     A
