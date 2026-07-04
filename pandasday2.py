@@ -149,6 +149,8 @@ df.drop(columns=["Grade"],inplace=True) #This removes the grade column
 print(df)
 df["Results"]={"Pass","Pass","Pass","Pass","Pass","Pass","Pass"]
 print(df)
+df.drop(index=[2],inplace=True)
+print(df)
 df.to_csv("new_students.csv",index=False) #This creates new students csv file without indexes
 
 OUTPUT
@@ -172,6 +174,13 @@ OUTPUT
 0  Rajesh     93    Pass
 1   Adish     98    Pass
 2  Nandan     70    Pass
+3  Venkat     99    Pass
+4     Ram     65    Pass
+5   Ranga     55    Pass
+6   Kiran     78    Pass
+Name  Score Results
+0  Rajesh     93    Pass
+1   Adish     98    Pass
 3  Venkat     99    Pass
 4     Ram     65    Pass
 5   Ranga     55    Pass
