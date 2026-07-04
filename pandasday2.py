@@ -129,3 +129,24 @@ Length: 3, dtype: str
      Name  Marks Grade
 1  Nandan     88     B
 3  Venkat     99     A
+
+ANOTHER EXAMPLE
+create students.csv
+Name,Marks,Grade
+Rajesh,93,A
+Adish,98,A
+Nandan,70,B
+Venkat,99,A
+Ram,65,C
+Ranga,55,C
+Kiran,78,B
+
+now in test.py file
+
+df.replace(columns={"Marks":"Scores"},inplace=True) #this rename the marks column as score column
+print(df)
+df.drop(columns=["Grade"],inplace=True) #This removes the grade column
+print(df)
+df["Results"]={"Pass","Pass","Pass","Pass","Pass","Pass","Pass"]
+print(df)
+df.to_csv("new_students.csv",index=False) #This creates new students csv file without indexes
