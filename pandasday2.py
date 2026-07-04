@@ -150,3 +150,31 @@ print(df)
 df["Results"]={"Pass","Pass","Pass","Pass","Pass","Pass","Pass"]
 print(df)
 df.to_csv("new_students.csv",index=False) #This creates new students csv file without indexes
+
+OUTPUT
+ Name  Score Grade
+0  Rajesh     93     A
+1   Adish     98     A
+2  Nandan     70     B
+3  Venkat     99     A
+4     Ram     65     C
+5   Ranga     55     C
+6   Kiran     78     B
+     Name  Score
+0  Rajesh     93
+1   Adish     98
+2  Nandan     70
+3  Venkat     99
+4     Ram     65
+5   Ranga     55
+6   Kiran     78
+     Name  Score Results
+0  Rajesh     93    Pass
+1   Adish     98    Pass
+2  Nandan     70    Pass
+3  Venkat     99    Pass
+4     Ram     65    Pass
+5   Ranga     55    Pass
+6   Kiran     78    Pass
+
+new_students.csv file
