@@ -178,3 +178,11 @@ OUTPUT
 6   Kiran     78    Pass
 
 new_students.csv file
+Name,Score,Results
+Rajesh,93,Pass
+Adish,98,Pass
+Nandan,70,Pass
+Venkat,99,Pass
+Ram,65,Pass
+Ranga,55,Pass
+Kiran,78,Pass
