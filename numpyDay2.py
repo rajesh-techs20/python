@@ -74,3 +74,12 @@ print(x.shape)
 print(x.dtype)
 
 OUTPUT
+3
+(3, 2, 3)
+18
+61
+int64
+2
+9
+(3, 3)
+int64
