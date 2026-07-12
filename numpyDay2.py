@@ -53,3 +53,24 @@ print(mat[1:3, 0:2]) #Submatrix from row 1 to 2 and column 0 to 1
 [[4 5]
  [7 8]]
 
+DAY 3
+a=np.array([[[10,20,30],[40,50,60]],
+            [[4,5,6],[7,8,9]],
+            [[5,6,7],[10,11,12]]
+            ])
+print(a.ndim)
+print(a.shape)
+print(a.size)
+words=a[0][1][1]+a[2][1][1]
+print(words)
+print(a.dtype)
+
+x=np.array([[5,10,15],
+            [20,25,30],
+            [35,40,45]])
+print(x.ndim)
+print(x.size)
+print(x.shape)
+print(x.dtype)
+
+OUTPUT
