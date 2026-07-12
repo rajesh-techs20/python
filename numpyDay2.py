@@ -118,3 +118,16 @@ OUTPUT
 [[1 4]
  [2 5]
  [3 6]]
+
+
+t=np.array([[10,20,30],
+            [40,50,60],
+            [70,80,90]])
+print(np.sum(t))
+print(np.sum(t,axis=0))
+print(np.sum(t,axis=1))
+
+OUTPUT
+450
+[120 150 180]
+[ 60 150 240]
