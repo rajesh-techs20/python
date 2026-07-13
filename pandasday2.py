@@ -195,3 +195,24 @@ Venkat,99,Pass
 Ram,65,Pass
 Ranga,55,Pass
 Kiran,78,Pass
+
+
+MERGING AND CONCATING TWO CSV FILES
+
+import pandas as pd
+
+students=pd.read_csv("student.csv")
+marks=pd.read_csv("marks.csv")
+
+students["ID"]=students["ID"].astype(str)
+marks["ID"]=marks["ID"].astype(str)
+
+result=pd.merge(students,marks,on="ID")
+
+print(result)
+
+data1=pd.read_csv("data1.csv")
+data2=pd.read_csv("data2.csv")
+
+result=pd.concat([data1,data2],ignore_index=True)
+print(result)
