@@ -29,3 +29,25 @@ print("Model saved successfully")
 model=joblib.load("hose.pkl")
 prediction=model.predict(pd.DataFrame({"Area":[1700]}))
 print(prediction)
+
+#DECISION TREE CLASSIFIER
+import pandas as pd
+from sklearn.tree import DecisionTreeClassifier
+import joblib
+
+data={
+    "Marks":[40,25,90,70,50,20,34],
+    "Result":["Pass","Fail","Pass","Pass","Pass","Fail","Fail"]
+}
+
+df=pd.DataFrame(data)
+
+X=df[["Marks"]]
+y=df["Result"]
+
+model=DecisionTreeClassifier()
+model.fit(X,y)
+
+prediction=model.predict([[35]])
+print(prediction)
+
