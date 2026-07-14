@@ -51,3 +51,22 @@ model.fit(X,y)
 prediction=model.predict([[35]])
 print(prediction)
 
+#KNEIGHBORS 
+import pandas as pd
+from sklearn.neighbors import KNeighborsClassifier
+
+data={
+    "Marks":[1,2,3,4,5],
+    "Result":["Fail","Fail","Pass","Pass","Pass"]
+}
+
+df=pd.DataFrame(data)
+
+X=df[["Marks"]]
+y=df["Result"]
+model=KNeighborsClassifier()
+model.fit(X,y)
+
+prediction=model.predict(pd.DataFrame({"Marks":[2.6]}))
+print(prediction)
+
