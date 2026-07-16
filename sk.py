@@ -145,3 +145,17 @@ model.fit(X,y)
 prediction=model.predict(pd.DataFrame({"Marks":[2.4]}))
 print(prediction)
 
+KCLUSTERS
+import numpy as np
+from sklearn.cluster import KMeans
+
+X=np.array([
+    [1],[2],[3],
+    [10],[11],[12]
+])
+
+model=KMeans(n_clusters=2,random_state=42)
+model.fit(X)
+
+print(model.labels_)
+
