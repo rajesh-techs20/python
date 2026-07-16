@@ -70,3 +70,21 @@ model.fit(X,y)
 prediction=model.predict(pd.DataFrame({"Marks":[2.6]}))
 print(prediction)
 
+RANDOM FOREST CLASSIFIER
+import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
+import joblib
+
+data={
+    "Marks":[1,2,3,4,5],
+    "Result":["fail","fail","pass","pass","pass"]
+}
+df=pd.DataFrame(data)
+X=df[["Marks"]]
+y=df["Result"]
+
+model=RandomForestClassifier(n_estimators=10,random_state=42)
+model.fit(X,y)
+
+prediction=model.predict(pd.DataFrame({"Marks":[2.6]}))
+print(prediction)
