@@ -106,3 +106,23 @@ model.fit(X,y)
 
 prediction=model.predict(pd.DataFrame({"Marks":[2.4]}))
 print(prediction)
+
+
+SUPER VECTOR MACHINE
+import pandas as pd
+from sklearn.svm import SVC
+
+data={
+    "Marks":[1,2,3,4,5],
+    "Result":["Fail","Fail","Pass","Pass","Pass"]
+}
+
+df=pd.DataFrame(data)
+X=df[["Marks"]]
+y=df["Result"]
+
+model=SVC(kernel="linear")
+model.fit(X,y)
+
+prediction=model.predict(pd.DataFrame({"Marks":[2.4]}))
+print(prediction)
