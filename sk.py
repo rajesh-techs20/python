@@ -159,3 +159,45 @@ model.fit(X)
 
 print(model.labels_)
 
+
+MODEL ELEVATION
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import precision_score
+from sklearn.metrics import recall_score
+from sklearn.metrics import f1_score
+
+
+actual=[1,0,1,0,1,1,0,1,1,0,0,0]
+predic=[1,0,1,0,1,1,0,1,1,0,0,1]
+
+accuracy=accuracy_score(actual,predic)#out of all predictions how many were actually correct
+print(accuracy)
+cm=confusion_matrix(actual,predic)#it gives  matrix TN FP FN TP
+#TP those which actal and predict are both positive
+# FP actaul are negative but predicted is positive
+# TN both actual and predicted are negative
+# FN actual is positive predicted is negativerint(cm)
+print(cm)
+ps=precision_score(actual,predic)#out of all true predictions how many were actually true
+print(ps)
+rs=recall_score(actual,predic) #out of all actual how many will model find it correctly
+print(rs)
+fp=f1_score(actual,predic)
+print(fp)
+
+from sklearn.preprocessing import StandardScaler 
+from sklearn.preprocessing import MinMaxScaler
+import pandas as pd
+
+data={
+    "Age":[24,30,40],
+    "Salary":[25000,80000,150000]
+}
+df=pd.DataFrame(data)
+scaler=StandardScaler()
+scaled=scaler.fit_transform(df)
+print(scaled)
+scaler=MinMaxScaler()
+scaled=scaler.fit_transform(df)
+print(scaled)
