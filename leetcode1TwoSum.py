@@ -4,5 +4,7 @@ class Solution(object):
       for j in range(i+1,len(nums)):
         if target==nums[i]+nums[j]:
           return[i,j]
+
 Time complexity O(n^2)
 Space complexity O(1)
+
