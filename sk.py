@@ -194,6 +194,7 @@ data={
     "Age":[24,30,40],
     "Salary":[25000,80000,150000]
 }
+
 df=pd.DataFrame(data)
 scaler=StandardScaler()
 scaled=scaler.fit_transform(df)
